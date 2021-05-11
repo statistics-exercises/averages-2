@@ -15,7 +15,7 @@ class UnitTests(unittest.TestCase) :
     def test_variables(self) : 
         inputs, variables = [], []
         for a in range(-3,3) :
-            for b in range(0,6) :
+            for b in range(4,9) :
                 inputs.append((a,b,))
                 myvar = randomvar( (a+b)/2, variance=(b-a)*(b-a)/12, vmin=a, vmax=b, isinteger=False )
                 variables.append( myvar )
