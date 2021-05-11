@@ -4,7 +4,7 @@ import numpy as np
 def uniform( a, b ) : 
   # Your code to generate a random variable that is distributed uniformly
   # between a and b goes here.
-  
+  return (b-a)*np.random.uniform(0,1) + a 
 
 # You should not need to adjust any of the code from here onwards
 xv, yv1, yv2, yv3, yv4 = np.linspace(1,100,100), np.zeros(100), np.zeros(100), np.zeros(100), np.zeros(100)
