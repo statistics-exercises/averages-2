@@ -17,6 +17,6 @@ class UnitTests(unittest.TestCase) :
         for a in range(-3,3) :
             for b in range(4,9) :
                 inputs.append((a,b,))
-                myvar = randomvar( (a+b)/2, variance=(b-a)*(b-a)/12, vmin=a, vmax=b, isinteger=False )
+                myvar = randomvar( (a+b)/2, variance=(b-a)*(b-a)/12, vmin=a, vmax=b, isinteger=False, nsamples=100 )
                 variables.append( myvar )
         assert( check_func('uniform', inputs, variables ) )
