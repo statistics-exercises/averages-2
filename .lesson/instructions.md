@@ -10,9 +10,7 @@ The variable you generate in this way is a sample from U(0,1).  To complete this
 a uniform random variable is greater than a and less than b.  It is very straightforward to generate such a random variable if we know how to generate a random variable from U(0,1).  We simply need to 
 generate a sample from U(0,1) and then perform the following transformation:
 
-$$
-U(a,b)=a+(b-a)U(0,1)
-$$
+![](equation.png)
 
 The number output here is (obviously) a uniform random variable that lies between a and b.
 
